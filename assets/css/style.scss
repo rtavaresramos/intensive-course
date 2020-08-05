@@ -45,6 +45,7 @@ body {
   max-width: 1040px;
   margin: 0 auto;
   background: $light-color;
+  overflow-x: hidden;
 }
 
 header {
@@ -91,7 +92,7 @@ header {
 }
 
 .first__section {
-  margin-top: -20px;
+  margin-top: 30px;
   padding: 0 10px 40px 10px;
   @include flexCenter();
   flex-direction: column;
@@ -208,7 +209,7 @@ header {
     padding: 0 40px;
   }
   .pay-method {
-    width: 370px;
+    width: 330px;
     margin: 30px 0;
     @include flexCenter();
     justify-content: flex-start;
@@ -294,7 +295,18 @@ header {
       }
     }
   }
-
+  .pay-method {
+    margin: 30px 0;
+    @include flexCenter();
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    h5 {
+      font-size: 1.6rem;
+    }
+    img {
+      width: 100px;
+    }
+  }
   .how__it__works {
     flex-direction: column;
   }

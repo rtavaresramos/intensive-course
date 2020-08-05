@@ -40,6 +40,7 @@ body {
   max-width: 1040px;
   margin: 0 auto;
   background: #f4f4f4;
+  overflow-x: hidden;
 }
 
 header {
@@ -118,7 +119,7 @@ header .button__container a {
 }
 
 .first__section {
-  margin-top: -20px;
+  margin-top: 30px;
   padding: 0 10px 40px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +353,7 @@ header .button__container a {
 }
 
 .offer .pay-method {
-  width: 370px;
+  width: 330px;
   margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,6 +509,29 @@ header .button__container a {
             align-items: center;
   }
   header .header__image img {
+    width: 100px;
+  }
+  .pay-method {
+    margin: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pay-method h5 {
+    font-size: 1.6rem;
+  }
+  .pay-method img {
     width: 100px;
   }
   .how__it__works {
