@@ -19,12 +19,8 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Archivo', sans-serif;
 }
-body, html{
-  scroll-behavior: smooth!important;
 
-}
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -310,7 +306,7 @@ header .button__container a {
 }
 
 .offer .pay-method {
-  width: 400px;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,7 +491,7 @@ header .button__container a {
         flex-wrap: wrap;
   }
   .bonus .bonus-1 img {
-    width: 300px;
+    width: 280px;
     margin: 0 10px;
   }
   .bonus .bonus-2 {
@@ -516,7 +512,7 @@ header .button__container a {
             flex-direction: row-reverse;
   }
   .bonus .bonus-2 img {
-    width: 300px;
+    width: 280px;
     margin: 0 10px;
   }
   .bonus .bonus-content {
