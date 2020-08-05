@@ -12,21 +12,24 @@ a {
 }
 
 strong {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
-
+p{
+    font-size: 1.4rem;
+}
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Archivo', sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: 'Archivo', sans-serif;
   font-family: "Poppins", sans-serif;
   background: $primary-color;
   font-size: 1.6rem;
@@ -74,7 +77,7 @@ header {
     height: 50px;
     margin-top: 40px;
     a {
-      padding: 14px 26px;
+      padding: 18px 26px;
       border-radius: 40px;
       background-color: $primary-color;
       color: $light-color;
@@ -110,7 +113,15 @@ header {
 }
 
 .second__section {
+    p, h2{
+        max-width: 780px;
+        margin: 0 40px 0 50px;
+        line-height: 2.5rem;
+      }
+
+      
   .how__it__works {
+      padding: 0 0 50px 0;
     @include flexCenter();
     flex-wrap: wrap;
     .item {
@@ -124,6 +135,88 @@ header {
   }
 }
 
+.bonus{
+    @include flexCenter();
+    flex-direction: column;
+    padding: 20px;
+
+    .bonus-1{
+        @include flexCenter();
+
+        img{
+            width: 400px;
+            margin: 0 40px;
+        }
+    }
+    .bonus-2{
+        @include flexCenter();
+
+        flex-direction: row-reverse;
+        img{
+            width: 400px;
+            margin: 0 20px;
+        }
+    }
+    .bonus-content{
+        margin: 0 30px;
+    }
+}
+.offer{
+    padding-bottom: 50px;
+    @include flexCenter();
+    flex-direction: column;
+    .real-price{
+        font-size: 4rem;
+    }
+    .offer-price{
+        h2{
+            span{
+                font-weight: 300;
+                color: $primary-color;
+                text-decoration: line-through;
+            }
+        }
+    }
+    h3{
+        max-width: 760px;
+        text-align: center;
+        color: $secundary-color;
+                margin: 40px;
+        font-weight: 600;
+    }
+    h1{
+        max-width: 760px;
+        text-align: center;
+                color: $primary-color;
+                margin: 40px;
+        font-weight: 600;
+    }
+    .pay-method{
+        width: 400px;
+        @include flexCenter();
+        justify-content: flex-start;
+
+        img{
+            width: 100px;
+        }
+    }
+
+    .button__container {
+        @include flexCenter;
+        text-align: center;
+        color: $light-color;
+        height: 50px;
+        margin-top: 60px;
+        a {
+            font-size: 2rem;
+          padding: 18px;
+          margin: 0 8px;
+          border-radius: 14px;
+          background-color: $primary-color;
+          color: $light-blue-color;
+        }
+    }
+}
 @media screen and (max-width: 800px) {
   header {
     flex-wrap: wrap-reverse;
@@ -137,6 +230,33 @@ header {
       }
     }
   }
+
+  .bonus{
+    @include flexCenter();
+    flex-direction: column;
+    padding: 20px;
+
+    .bonus-1{
+        @include flexCenter();
+        flex-wrap: wrap;
+        img{
+            width: 350px;
+            margin: 0 40px;
+        }
+    }
+    .bonus-2{
+        @include flexCenter();
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        img{
+            width: 350px;
+            margin: 0 20px;
+        }
+    }
+    .bonus-content{
+        margin: 0 30px;
+    }
+}
 }
 
 @media screen and (max-width: 485px) {
@@ -156,4 +276,30 @@ header {
   .how__it__works {
     flex-direction: column;
   }
+  .bonus{
+    @include flexCenter();
+    flex-direction: column;
+    padding: 20px;
+
+    .bonus-1{
+        @include flexCenter();
+        flex-wrap: wrap;
+        img{
+            width: 300px;
+            margin: 0 10px;
+        }
+    }
+    .bonus-2{
+        @include flexCenter();
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        img{
+            width: 300px;
+            margin: 0 10px;
+        }
+    }
+    .bonus-content{
+        margin: 0 30px;
+    }
+}
 }
