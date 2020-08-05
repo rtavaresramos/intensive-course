@@ -1,6 +1,5 @@
 :root {
   font-size: 80%;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -34,6 +33,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #ec5d4f;
   font-size: 1.6rem;
+  scroll-behavior: smooth;
   color: #273252;
 }
 
@@ -42,6 +42,7 @@ body {
   margin: 0 auto;
   background: #f4f4f4;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
