@@ -15,16 +15,21 @@ strong {
   font-size: 1.4rem;
   font-weight: 600;
 }
-p{
-    font-size: 1.4rem;
+p {
+  font-size: 1.4rem;
 }
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Archivo', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo", sans-serif;
 }
 body {
   margin: 0;
@@ -113,15 +118,15 @@ header {
 }
 
 .second__section {
-    p, h2{
-        max-width: 780px;
-        margin: 0 40px 0 50px;
-        line-height: 2.5rem;
-      }
+  p,
+  h2 {
+    max-width: 780px;
+    margin: 0 40px 0 50px;
+    line-height: 2.5rem;
+  }
 
-      
   .how__it__works {
-      padding: 0 0 50px 0;
+    padding: 0 0 50px 0;
     @include flexCenter();
     flex-wrap: wrap;
     .item {
@@ -135,87 +140,104 @@ header {
   }
 }
 
-.bonus{
+.bonus {
+  @include flexCenter();
+  flex-direction: column;
+  padding: 20px;
+
+  .bonus-1 {
     @include flexCenter();
-    flex-direction: column;
-    padding: 20px;
 
-    .bonus-1{
-        @include flexCenter();
+    img {
+      width: 400px;
+      margin: 0 40px;
+    }
+  }
+  .bonus-2 {
+    @include flexCenter();
 
-        img{
-            width: 400px;
-            margin: 0 40px;
-        }
+    flex-direction: row-reverse;
+    img {
+      width: 400px;
+      margin: 0 20px;
     }
-    .bonus-2{
-        @include flexCenter();
-
-        flex-direction: row-reverse;
-        img{
-            width: 400px;
-            margin: 0 20px;
-        }
-    }
-    .bonus-content{
-        margin: 0 30px;
-    }
+  }
+  .bonus-content {
+    margin: 0 30px;
+  }
 }
-.offer{
-    padding-bottom: 50px;
+.offer {
+  padding-bottom: 100px;
+  @include flexCenter();
+  flex-direction: column;
+  .real-price {
+    font-size: 3rem;
+  }
+  .offer-price {
     @include flexCenter();
     flex-direction: column;
-    .real-price{
-        font-size: 4rem;
+    h2 {
+      width: 300px;
+      span {
+        font-weight: 300;
+        color: $primary-color;
+        text-decoration: line-through;
+      }
     }
-    .offer-price{
-        h2{
-            span{
-                font-weight: 300;
-                color: $primary-color;
-                text-decoration: line-through;
-            }
-        }
-    }
-    h3{
-        max-width: 760px;
-        text-align: center;
-        color: $secundary-color;
-                margin: 40px;
-        font-weight: 600;
-    }
-    h1{
-        max-width: 760px;
-        text-align: center;
-                color: $primary-color;
-                margin: 40px;
-        font-weight: 600;
-    }
-    .pay-method{
-        width: 370px;
-        @include flexCenter();
-        justify-content: flex-start;
+  }
+  h3 {
+    text-align: center;
+    color: $secundary-color;
+    margin: 40px;
+    font-weight: 600;
+  }
+  h1 {
+    text-align: center;
+    color: $primary-color;
+    margin: 10px;
+    font-weight: 600;
+  }
 
-        img{
-            width: 100px;
-        }
+  .payment {
+    h2 {
+      font-size: 2.2rem;
     }
+    @include flexCenter();
+    width: 375px;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .pay-method {
+    width: 370px;
+    margin: 30px 0;
+    @include flexCenter();
+    justify-content: flex-start;
+    h5 {
+      font-size: 1.6rem;
+    }
+    img {
+      width: 100px;
+    }
+  }
 
-    .button__container {
-        @include flexCenter;
-        text-align: center;
-        color: $light-color;
-        height: 50px;
-        margin-top: 60px;
-        a {
-            font-size: 2rem;
-          padding: 18px;
-          margin: 0 8px;
-          border-radius: 14px;
-          background-color: $primary-color;
-          color: $light-blue-color;
-        }
+  .button__container {
+    @include flexCenter;
+    text-align: center;
+    color: $light-color;
+    height: 50px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 60px;
+    a {
+      font-size: 2rem;
+      padding: 18px;
+      margin: 0 8px;
+      border-radius: 14px;
+      background-color: $light-blue-color;
+      color: $secundary-color;
+      box-shadow: 0 0 10px $secundary-color;
     }
+  }
 }
 @media screen and (max-width: 800px) {
   header {
@@ -231,32 +253,32 @@ header {
     }
   }
 
-  .bonus{
+  .bonus {
     @include flexCenter();
     flex-direction: column;
     padding: 20px;
 
-    .bonus-1{
-        @include flexCenter();
-        flex-wrap: wrap;
-        img{
-            width: 350px;
-            margin: 0 40px;
-        }
+    .bonus-1 {
+      @include flexCenter();
+      flex-wrap: wrap;
+      img {
+        width: 350px;
+        margin: 0 40px;
+      }
     }
-    .bonus-2{
-        @include flexCenter();
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        img{
-            width: 350px;
-            margin: 0 20px;
-        }
+    .bonus-2 {
+      @include flexCenter();
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      img {
+        width: 350px;
+        margin: 0 20px;
+      }
     }
-    .bonus-content{
-        margin: 0 30px;
+    .bonus-content {
+      margin: 0 30px;
     }
-}
+  }
 }
 
 @media screen and (max-width: 485px) {
@@ -276,30 +298,30 @@ header {
   .how__it__works {
     flex-direction: column;
   }
-  .bonus{
+  .bonus {
     @include flexCenter();
     flex-direction: column;
     padding: 20px;
 
-    .bonus-1{
-        @include flexCenter();
-        flex-wrap: wrap;
-        img{
-            width: 280px;
-            margin: 0 10px;
-        }
+    .bonus-1 {
+      @include flexCenter();
+      flex-wrap: wrap;
+      img {
+        width: 280px;
+        margin: 0 10px;
+      }
     }
-    .bonus-2{
-        @include flexCenter();
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        img{
-            width: 280px;
-            margin: 0 10px;
-        }
+    .bonus-2 {
+      @include flexCenter();
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      img {
+        width: 280px;
+        margin: 0 10px;
+      }
     }
-    .bonus-content{
-        margin: 0 30px;
+    .bonus-content {
+      margin: 0 30px;
     }
-}
+  }
 }

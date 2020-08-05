@@ -16,8 +16,13 @@ p {
   font-size: 1.4rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Archivo', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo", sans-serif;
 }
 
 body {
@@ -161,7 +166,8 @@ header .button__container a {
   width: 200px;
 }
 
-.second__section p, .second__section h2 {
+.second__section p,
+.second__section h2 {
   max-width: 780px;
   margin: 0 40px 0 50px;
   line-height: 2.5rem;
@@ -263,7 +269,7 @@ header .button__container a {
 }
 
 .offer {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +286,27 @@ header .button__container a {
 }
 
 .offer .real-price {
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.offer .offer-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer .offer-price h2 {
+  width: 300px;
 }
 
 .offer .offer-price h2 span {
@@ -290,7 +316,6 @@ header .button__container a {
 }
 
 .offer h3 {
-  max-width: 760px;
   text-align: center;
   color: #273252;
   margin: 40px;
@@ -298,15 +323,37 @@ header .button__container a {
 }
 
 .offer h1 {
-  max-width: 760px;
   text-align: center;
   color: #ec5d4f;
-  margin: 40px;
+  margin: 10px;
   font-weight: 600;
+}
+
+.offer .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 375px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+}
+
+.offer .payment h2 {
+  font-size: 2.2rem;
 }
 
 .offer .pay-method {
   width: 370px;
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,6 +366,10 @@ header .button__container a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.offer .pay-method h5 {
+  font-size: 1.6rem;
 }
 
 .offer .pay-method img {
@@ -338,6 +389,8 @@ header .button__container a {
   text-align: center;
   color: #f4f4f4;
   height: 50px;
+  max-width: 500px;
+  width: 100%;
   margin-top: 60px;
 }
 
@@ -346,8 +399,10 @@ header .button__container a {
   padding: 18px;
   margin: 0 8px;
   border-radius: 14px;
-  background-color: #ec5d4f;
-  color: #cbfbfd;
+  background-color: #cbfbfd;
+  color: #273252;
+  -webkit-box-shadow: 0 0 10px #273252;
+          box-shadow: 0 0 10px #273252;
 }
 
 @media screen and (max-width: 800px) {
